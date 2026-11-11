@@ -1,0 +1,28 @@
+{
+  "name": "acme-switchgears-crm",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ACME Switchgears CRM, inventory and quotation PDF MVP",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "backup": "node scripts/backup.js",
+    "set-password": "node scripts/set-password.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "pdfkit": "^0.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
